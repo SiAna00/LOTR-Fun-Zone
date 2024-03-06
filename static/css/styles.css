@@ -1,0 +1,22 @@
+.navigation {
+    position: absolute;
+    top: 10px;
+}
+
+.hero-title {
+    position: relative;
+    bottom: 500px;
+    opacity: 0.5;
+}
+
+.info-title {
+    position: relative;
+    bottom: 300px;
+    left: 20px;
+}
+
+.info-button {
+    position: relative;
+    bottom: 100px;
+    left: 240px;
+}

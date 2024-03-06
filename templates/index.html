@@ -1,5 +1,33 @@
 {% include "header.html" %}
 
+        <!-- Hero section -->
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col px-0">
+                    <img src="../static/assets/img/hero.jpg" alt="" class="h-100 w-100">
+                </div>
+            </div>
+        </div>
 
+        <!-- Main section -->
+        <div class="container-fluid mt-5 py-5">
+            <div class="row justify-content-around gx-5">
+                <div class="col-md-3">
+                    <img class="img-fluid shadow" src="../static/assets/img/movies.webp" style="border-radius: 5%;" alt="">
+                    <h4 class="info-title" style="color: white;">Movies</h4>
+                    <button class="info-button btn btn-light">Explore</button>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid shadow" src="../static/assets/img/quotes.jpg" style="border-radius: 5%;" alt="">
+                    <h4 class="info-title" style="color: white;">Characters</h4>
+                    <button class="info-button btn btn-light" href="{{ url_for('get_characters') }}">Explore</button>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid shadow" src="../static/assets/img/quotes.jpg" style="border-radius: 5%;" alt="">
+                    <h4 class="info-title" style="color: white;">Quotes</h4>
+                    <button class="info-button btn btn-light">Explore</button>
+                </div>
+            </div>
+        </div>
 
 {% include "footer.html" %}
