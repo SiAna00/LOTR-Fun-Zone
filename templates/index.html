@@ -1,31 +1,32 @@
 {% include "header.html" %}
-
-        <!-- Hero section -->
-        <div class="container-fluid px-0">
-            <div class="row">
-                <div class="col px-0">
-                    <img src="../static/assets/img/hero.jpg" alt="" class="h-100 w-100">
-                </div>
-            </div>
+        <!-- Mid-section -->
+        <div class="container-fluid mb-5 py-5 text-center font-italic" style="background-color: rgba(0, 0, 0, 0.1);">
+            <h3 class="fw-normal" style="font-style: italic; color: darkgoldenrod;">“Speak Friend and Enter”</h3>
         </div>
 
         <!-- Main section -->
-        <div class="container-fluid mt-5 py-5">
-            <div class="row justify-content-around gx-5">
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-around gx-3">
                 <div class="col-md-3">
-                    <img class="img-fluid shadow" src="../static/assets/img/movies.webp" style="border-radius: 5%;" alt="">
+                    <img class="img-fluid shadow-lg" src="../static/assets/img/movies.png" style="border-radius: 5%;" alt="">
                     <h4 class="info-title" style="color: white;">Movies</h4>
-                    <button class="info-button btn btn-light">Explore</button>
+                    <form class="info-button" action="{{ url_for('get_movies') }}">
+                        <button class="btn">Explore</button>
+                    </form>
                 </div>
                 <div class="col-md-3">
-                    <img class="img-fluid shadow" src="../static/assets/img/quotes.jpg" style="border-radius: 5%;" alt="">
+                    <img class="img-fluid shadow-lg" src="../static/assets/img/characters.png" style="border-radius: 5%;" alt="">
                     <h4 class="info-title" style="color: white;">Characters</h4>
-                    <button class="info-button btn btn-light" href="{{ url_for('get_characters') }}">Explore</button>
+                    <form class="info-button" action="{{ url_for('get_characters') }}">
+                        <button class="btn">Explore</button>
+                    </form>
                 </div>
                 <div class="col-md-3">
-                    <img class="img-fluid shadow" src="../static/assets/img/quotes.jpg" style="border-radius: 5%;" alt="">
+                    <img class="img-fluid shadow-lg" src="../static/assets/img/quotes.png" style="border-radius: 5%;" alt="">
                     <h4 class="info-title" style="color: white;">Quotes</h4>
-                    <button class="info-button btn btn-light">Explore</button>
+                    <form class="info-button" action="">
+                        <button class="btn">Explore</button>
+                    </form>
                 </div>
             </div>
         </div>

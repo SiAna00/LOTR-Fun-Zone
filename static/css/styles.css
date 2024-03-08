@@ -20,3 +20,31 @@
     bottom: 100px;
     left: 240px;
 }
+
+a {
+    color: goldenrod;
+    text-decoration: None;
+}
+
+a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: goldenrod;
+}
+
+.btn:hover {
+    background-color: darkgoldenrod;
+    font-weight: 600;
+}
+
+.character-card {
+    background-color: antiquewhite;
+}
+
+.character-race {
+    background-color: black;
+    color: whitesmoke;
+}

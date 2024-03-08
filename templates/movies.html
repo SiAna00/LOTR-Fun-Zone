@@ -1,0 +1,47 @@
+{% include "header.html" %}
+
+<div class="container-fluid mt-5 pt-5">
+
+    <!-- Headline -->
+    <div class="row px-4 pb-4">
+        <h3 class="px-5 mx-5">Movies</h3>
+    </div>
+
+    <!-- Movies list -->
+    <div class="row justify-content-around my-5 mx-5">
+        {% for movie in movies %}
+        <div class="movie-card col-md-3 mx-5 my-4 px-0 rounded" style="border-radius: 5%;">
+            {% if movie.name == "The Lord of the Rings Series" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/lotr.png" alt="">
+            {% elif movie.name == "The Hobbit Series" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/hobbit.png" alt="">
+            {% elif movie.name == "The Unexpected Journey" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/unexpectedjourney.png" alt="">
+            {% elif movie.name == "The Desolation of Smaug" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/desolationofsmaug.png" alt="">
+            {% elif movie.name == "The Battle of the Five Armies" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/battleoffivearmies.png" alt="">
+            {% elif movie.name == "The Two Towers" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/twotowers.png" alt="">
+            {% elif movie.name == "The Fellowship of the Ring" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/fellowship.png" alt="">
+            {% elif movie.name == "The Return of the King" %}
+            <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/returnoftheking.png" alt="">
+            {% endif %}
+            <h5 class="movie-title my-4 py-1">{{ movie.name }}</h5>
+            <div class="info">
+                <h6><span class="fw-normal">Runtime: </span>{{ movie.runtimeInMinutes }}</h6>
+                <h6><span class="fw-normal">Budget (Millions): </span>{{ movie.budgetInMillions }}</h6>
+                <h6><span class="fw-normal">Box Office (Millions): </span>{{ movie.boxOfficeRevenueInMillions }}</h6>
+                <h6><span class="fw-normal">Oscar Nominations: </span>{{ movie.academyAwardNominations }}</h6>
+                <h6><span class="fw-normal">Oscar Wins: </span>{{ movie.academyAwardWins }}</h6>
+                <h6><span class="fw-normal">Rotten Tomatoes: </span>{{ movie.rottenTomatoesScore }}</h6>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</div>
+
+{% include "footer.html" %}
