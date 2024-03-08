@@ -5,6 +5,7 @@
     <!-- Headline -->
     <div class="row px-4 pb-4">
         <h3 class="px-5 mx-5">Characters</h3>
+        <p class="lead px-5 mx-5">Journey through the rich tapestry of Middle-earth by delving into the profiles of iconic characters. From the courageous Frodo Baggins to the wise Gandalf the Grey, each character has a unique story to tell. Uncover the depths of their personalities, motivations, and roles in the epic saga.</p>
     </div>
 
     <!-- Dropdown -->
@@ -45,7 +46,7 @@
             <img class="img-fluid rounded" style="border: 2px solid goldenrod; border-radius: 5%;" src="../static/assets/img/human_female.jpg" alt="">
             {% endif %}
             <h6 class="character-race my-2 py-1 text-center" style="border: 2px solid goldenrod">{{ character.race }}</h6>
-            <div class="info px-2 py-2">
+            <div class="character-info px-2 py-2">
                 <h6><span class="fw-normal">Name: </span>{{ character.name }}</h6>
                 <h6><span class="fw-normal">Gender: </span>{{ character.gender }}</h6>
                 <h6><span class="fw-normal">Spouse: </span>{{ character.spouse }}</h6>

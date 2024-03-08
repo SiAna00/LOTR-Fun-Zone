@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
 .navigation {
     position: absolute;
     top: 10px;
@@ -11,32 +15,32 @@
 
 .info-title {
     position: relative;
-    bottom: 300px;
+    bottom: 320px;
     left: 20px;
 }
 
 .info-button {
     position: relative;
-    bottom: 100px;
-    left: 240px;
+    bottom: 120px;
+    left: 260px;
 }
 
 a {
-    color: goldenrod;
+    color: darkgoldenrod;
     text-decoration: None;
 }
 
 a:hover {
-    color: darkgoldenrod;
+    color: goldenrod;
     text-decoration: underline;
 }
 
 .btn {
-    background-color: goldenrod;
+    background-color: darkgoldenrod;
 }
 
 .btn:hover {
-    background-color: darkgoldenrod;
+    background-color: goldenrod;
     font-weight: 600;
 }
 
@@ -47,4 +51,9 @@ a:hover {
 .character-race {
     background-color: black;
     color: whitesmoke;
+}
+
+.quote-card {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
 }

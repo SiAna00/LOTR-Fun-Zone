@@ -1,0 +1,43 @@
+{% include "header.html" %}
+
+<div class="container-fluid mt-5 pt-5">
+    <!-- Headline -->
+    <div class="row mx-3">
+        <h3 class="px-5 mx-5 pb-2">Quotes</h3>
+    </div>
+    <div class="row pb-4 justify-content-around">
+        <div class="col-md-4 px-0">
+            <p class="lead">Discover the profound wisdom and memorable lines that have become synonymous with the Lord of the Rings trilogy. From Aragorn's inspiring leadership to Gimli's hearty humor, these quotes resonate with audiences around the world. Immerse yourself in the language of Middle-earth and relive the magic through the words of your favorite characters.</p>
+        </div>
+        <div class="col-md-4 px-0">
+            <figure class="text-center py-5">
+                <blockquote class="blockquote" style="color: darkgoldenrod;">
+                  <p>One ring to rule them all, one ring to find them, one ring to bring them all, and in the darkness bind them.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  J. R. R. Tolkien<cite title="Source Title">, LOTR</cite>
+                </figcaption>
+              </figure>
+        </div>
+    </div>
+
+    <!-- Quotes list -->
+    <div class="row justify-content-around my-5 mx-5">
+        {% for quote in quotes %}
+        <div class="quote-card col-md-3 mx-5 my-4 px-5 py-5 rounded shadow" style="border-radius: 5%; border: 1px solid darkgoldenrod;">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>{{ quote.dialog }}</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone from <cite title="Source Title">LOTR</cite>
+                </figcaption>
+              </figure>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</div>
+
+{% include "footer.html" %}

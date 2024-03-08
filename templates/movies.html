@@ -5,6 +5,7 @@
     <!-- Headline -->
     <div class="row px-4 pb-4">
         <h3 class="px-5 mx-5">Movies</h3>
+        <p class="lead px-5 mx-5">Relive the magic of the Lord of the Rings film trilogy, a cinematic masterpiece that brought Tolkien's vision to the big screen. These films captured the hearts of millions with their stunning visuals, captivating storytelling, and unforgettable performances. Explore behind-the-scenes anecdotes, exclusive interviews, and rare footage to gain a deeper appreciation for the making of these cinematic treasures.</p>
     </div>
 
     <!-- Movies list -->
@@ -29,7 +30,7 @@
             <img class="img-fluid rounded" style="border-radius: 5%;" src="../static/assets/img/returnoftheking.png" alt="">
             {% endif %}
             <h5 class="movie-title my-4 py-1">{{ movie.name }}</h5>
-            <div class="info">
+            <div class="movies-info">
                 <h6><span class="fw-normal">Runtime: </span>{{ movie.runtimeInMinutes }}</h6>
                 <h6><span class="fw-normal">Budget (Millions): </span>{{ movie.budgetInMillions }}</h6>
                 <h6><span class="fw-normal">Box Office (Millions): </span>{{ movie.boxOfficeRevenueInMillions }}</h6>

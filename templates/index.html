@@ -1,7 +1,17 @@
 {% include "header.html" %}
         <!-- Mid-section -->
-        <div class="container-fluid mb-5 py-5 text-center font-italic" style="background-color: rgba(0, 0, 0, 0.1);">
+        <div class="container-fluid py-5 text-center font-italic">
             <h3 class="fw-normal" style="font-style: italic; color: darkgoldenrod;">“Speak Friend and Enter”</h3>
+        </div>
+
+        <!-- Introduction -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <p class="lead text-align-left">
+                        Welcome to Middle-earth Chronicles, your ultimate destination for all things Lord of the Rings! Immerse yourself in the enchanting world created by J.R.R. Tolkien, where epic adventures, memorable characters, and timeless quotes come to life on the silver screen.</p>
+                </div>
+            </div>
         </div>
 
         <!-- Main section -->
@@ -9,22 +19,22 @@
             <div class="row justify-content-around gx-3">
                 <div class="col-md-3">
                     <img class="img-fluid shadow-lg" src="../static/assets/img/movies.png" style="border-radius: 5%;" alt="">
-                    <h4 class="info-title" style="color: white;">Movies</h4>
+                    <h1 class="display-6 info-title py-1 px-1 rounded" style="color: white; display: inline-block; background-color: rgba(0, 0, 0, 0.2);">Movies</h1>
                     <form class="info-button" action="{{ url_for('get_movies') }}">
                         <button class="btn">Explore</button>
                     </form>
                 </div>
                 <div class="col-md-3">
                     <img class="img-fluid shadow-lg" src="../static/assets/img/characters.png" style="border-radius: 5%;" alt="">
-                    <h4 class="info-title" style="color: white;">Characters</h4>
+                    <h1 class="display-6 info-title py-1 px-1 rounded" style="color: white; display: inline-block; background-color: rgba(0, 0, 0, 0.2);">Characters</h1>
                     <form class="info-button" action="{{ url_for('get_characters') }}">
                         <button class="btn">Explore</button>
                     </form>
                 </div>
                 <div class="col-md-3">
                     <img class="img-fluid shadow-lg" src="../static/assets/img/quotes.png" style="border-radius: 5%;" alt="">
-                    <h4 class="info-title" style="color: white;">Quotes</h4>
-                    <form class="info-button" action="">
+                    <h1 class="display-6 info-title py-1 px-1 rounded" style="color: white; display: inline-block; background-color: rgba(0, 0, 0, 0.2);">Quotes</h1>
+                    <form class="info-button" action="{{ url_for('get_quotes') }}">
                         <button class="btn">Explore</button>
                     </form>
                 </div>

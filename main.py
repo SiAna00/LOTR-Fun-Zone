@@ -35,7 +35,7 @@ def get_characters():
         return render_template("characters.html", characters=characters["docs"])
     
 
-@app.route("/movie", methods=["GET", "POST"])
+@app.route("/movies")
 def get_movies():
     authorization_header = {
         "Accept": "application/json",
@@ -48,6 +48,27 @@ def get_movies():
     movies = response.json()
 
     return render_template("movies.html", movies=movies["docs"])
+
+
+@app.route("/quotes", methods=["GET", "POST"])
+def get_quotes():
+    authorization_header = {
+    "Accept": "application/json",
+    "Authorization": "Bearer " + api_key
+    }
+
+    response = requests.get("https://the-one-api.dev/v2/quote", headers=authorization_header)
+    response.raise_for_status()
+
+    quotes = response.json()
+
+    if request.method == "POST":
+        pass
+
+    else:
+        return render_template("quotes.html", quotes=quotes["docs"])
+    
+
 
 if __name__ == "__main__":
     app.run(debug=True)
